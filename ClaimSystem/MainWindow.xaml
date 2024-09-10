@@ -24,6 +24,6 @@
                 VerticalAlignment="Top" 
                 Margin="10,110,0,0" 
                 Width="120" 
-                Height="30"/>
+                Height="30" Click="Button_Click_1"/>
     </Grid>
 </Window>

@@ -23,5 +23,10 @@ namespace ClaimSystem
             // Optionally, close the current window if you don't want to keep it open
             // this.Close();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

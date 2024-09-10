@@ -1,0 +1,45 @@
+﻿<Window x:Class="ClaimSystem.View"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClaimSystem"
+        mc:Ignorable="d"
+        Title="View Claim" Height="450" Width="800">
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Claim Details" 
+                       FontSize="24" 
+                       FontWeight="Bold" 
+                       Margin="0,0,0,20" 
+                       HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Claim Description:" 
+                       FontWeight="Bold" 
+                       Margin="0,0,0,5"/>
+            <TextBlock Name="ClaimDescriptionTextBlock" 
+                       Width="760" 
+                       Height="100" 
+                       VerticalAlignment="Top" 
+                       Margin="0,0,0,20" 
+                       TextWrapping="Wrap" 
+                       Background="LightGray"
+                       Padding="5"/>
+
+            <TextBlock Text="Date of Claim:" 
+                       FontWeight="Bold" 
+                       Margin="0,0,0,5"/>
+            <TextBlock Name="ClaimDateTextBlock" 
+                       Width="200" 
+                       Margin="0,0,0,20" 
+                       Background="LightGray"
+                       Padding="5"/>
+
+            <Button Content="Close" 
+                    Width="120" 
+                    Height="30" 
+                    HorizontalAlignment="Center" 
+                    Click="CloseButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
