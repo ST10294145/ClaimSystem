@@ -26,7 +26,8 @@ namespace ClaimSystem
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            View viewWindow = new View();
+            viewWindow.Show();
         }
     }
 }
