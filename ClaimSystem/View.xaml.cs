@@ -9,14 +9,8 @@ namespace ClaimSystem
         {
             InitializeComponent();
 
-            // Bind the claims data to the controls
-            if (claims.Count > 0)
-            {
-                // Assuming we want to show the first claim for now
-                var firstClaim = claims[0];
-                ClaimDescriptionTextBlock.Text = firstClaim.Description;
-                ClaimDateTextBlock.Text = firstClaim.Date;
-            }
+            // Bind the claims data to the ListBox
+            ClaimsListBox.ItemsSource = claims;
         }
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)
