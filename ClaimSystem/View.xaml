@@ -7,39 +7,74 @@
         mc:Ignorable="d"
         Title="View Claim" Height="450" Width="800">
     <Grid Margin="20">
-        <StackPanel>
-            <TextBlock Text="Claim Details" 
-                       FontSize="24" 
-                       FontWeight="Bold" 
-                       Margin="0,0,0,20" 
-                       HorizontalAlignment="Center"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Title Row -->
+            <RowDefinition Height="Auto"/>
+            <!-- Description Label Row -->
+            <RowDefinition Height="Auto"/>
+            <!-- Description TextBlock Row -->
+            <RowDefinition Height="Auto"/>
+            <!-- Date Label Row -->
+            <RowDefinition Height="Auto"/>
+            <!-- Date TextBlock Row -->
+            <RowDefinition Height="Auto"/>
+            <!-- Button Row -->
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <!-- Single Column -->
+        </Grid.ColumnDefinitions>
 
-            <TextBlock Text="Claim Description:" 
-                       FontWeight="Bold" 
-                       Margin="0,0,0,5"/>
-            <TextBlock Name="ClaimDescriptionTextBlock" 
-                       Width="760" 
-                       Height="100" 
-                       VerticalAlignment="Top" 
-                       Margin="0,0,0,20" 
-                       TextWrapping="Wrap" 
-                       Background="LightGray"
-                       Padding="5"/>
+        <!-- Title -->
+        <TextBlock Text="Claim Details" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   Margin="0,0,0,20" 
+                   HorizontalAlignment="Center"
+                   Grid.Row="0" 
+                   Grid.Column="0"/>
 
-            <TextBlock Text="Date of Claim:" 
-                       FontWeight="Bold" 
-                       Margin="0,0,0,5"/>
-            <TextBlock Name="ClaimDateTextBlock" 
-                       Width="200" 
-                       Margin="0,0,0,20" 
-                       Background="LightGray"
-                       Padding="5"/>
+        <!-- Claim Description Label -->
+        <TextBlock Text="Claim Description:" 
+                   FontWeight="Bold" 
+                   Margin="0,0,0,5"
+                   Grid.Row="1" 
+                   Grid.Column="0"/>
 
-            <Button Content="Close" 
-                    Width="120" 
-                    Height="30" 
-                    HorizontalAlignment="Center" 
-                    Click="CloseButton_Click"/>
-        </StackPanel>
+        <!-- Claim Description TextBlock -->
+        <TextBlock Name="ClaimDescriptionTextBlock" 
+                   Height="100" 
+                   VerticalAlignment="Top" 
+                   Margin="0,0,0,20" 
+                   TextWrapping="Wrap" 
+                   Background="LightGray"
+                   Padding="5"
+                   Grid.Row="2" 
+                   Grid.Column="0"/>
+
+        <!-- Date of Claim Label -->
+        <TextBlock Text="Date of Claim:" 
+                   FontWeight="Bold" 
+                   Margin="0,0,0,5"
+                   Grid.Row="3" 
+                   Grid.Column="0"/>
+
+        <!-- Date of Claim TextBlock -->
+        <TextBlock Name="ClaimDateTextBlock" 
+                   Margin="0,0,0,20" 
+                   Background="LightGray"
+                   Padding="5"
+                   Grid.Row="4" 
+                   Grid.Column="0"/>
+
+        <!-- Close Button -->
+        <Button Content="Close" 
+                Width="120" 
+                Height="30" 
+                HorizontalAlignment="Center" 
+                Click="CloseButton_Click"
+                Grid.Row="5" 
+                Grid.Column="0"/>
     </Grid>
 </Window>
