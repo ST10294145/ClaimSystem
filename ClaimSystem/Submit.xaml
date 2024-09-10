@@ -1,0 +1,40 @@
+﻿<Window x:Class="ClaimSystem.Submit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClaimSystem"
+        mc:Ignorable="d"
+        Title="Submit Claim" Height="450" Width="800">
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Submit a Claim" 
+                       FontSize="24" 
+                       FontWeight="Bold" 
+                       Margin="0,0,0,20" 
+                       HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Claim Description:" 
+                       Margin="0,0,0,5"/>
+            <TextBox Name="ClaimDescriptionTextBox" 
+                     Width="760" 
+                     Height="100" 
+                     VerticalAlignment="Top" 
+                     Margin="0,0,0,20" 
+                     TextWrapping="Wrap" 
+                     AcceptsReturn="True"/>
+
+            <TextBlock Text="Date of Claim:" 
+                       Margin="0,0,0,5"/>
+            <DatePicker Name="ClaimDatePicker" 
+                        Width="200" 
+                        Margin="0,0,0,20"/>
+
+            <Button Content="Submit Claim" 
+                    Width="120" 
+                    Height="30" 
+                    HorizontalAlignment="Center" 
+                    Click="SubmitClaimButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
