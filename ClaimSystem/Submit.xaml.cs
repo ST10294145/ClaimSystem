@@ -1,27 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace ClaimSystem
 {
-    /// <summary>
-    /// Interaction logic for Submit.xaml
-    /// </summary>
     public partial class Submit : Window
     {
         public Submit()
         {
             InitializeComponent();
+        }
+
+        private void SubmitClaimButton_Click(object sender, RoutedEventArgs e)
+        {
+            string description = ClaimDescriptionTextBox.Text;
+            DateTime? date = ClaimDatePicker.SelectedDate;
+
+            // Add code here to process the claim submission
+            MessageBox.Show($"Claim submitted!\nDescription: {description}\nDate: {date}");
         }
     }
 }
