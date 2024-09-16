@@ -5,6 +5,10 @@ namespace ClaimSystem
 {
     public partial class View : Window
     {
+        public View()
+        {
+        }
+
         public View(List<Claim> claims)
         {
             InitializeComponent();
